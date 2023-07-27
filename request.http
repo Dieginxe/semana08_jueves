@@ -1,0 +1,51 @@
+
+GET https://dieginxe-organic-waffle-jxpjr9q4j4vhp547-8080.preview.app.github.dev/
+
+###
+
+
+@server = https://dieginxe-organic-waffle-jxpjr9q4j4vhp547-8080.preview.app.github.dev
+
+###
+
+GET {{server}}/
+
+###
+GET {{server}}/cursos
+
+###
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Aplicaciones moviles", "credito": 5}
+
+
+###
+PATCH {{server}}/cursos/2
+Content-Type: application/json
+
+{"nombre": "Phyton", "credito": 2}
+
+
+###
+GET {{server}}/cursos?size=2&page=0
+
+
+##########
+
+GET {{server}}/carreras
+
+###
+
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Marketing"}
+
+##########
+
+GET {{server}}/carreras/1/cursos
+
+##########
+
+GET {{server}}/cursos/6/carrera
